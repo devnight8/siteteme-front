@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body class="bg-backgroundColor">
+<body class="bg-backgroundColor ">
     <!-- Header Section -->
-    <header class="h-[105px]  ">
-        <div class="container m-auto h-full border-b border-dashed">
+    <header class="h-[105px]">
+        <div class="container px-2 md:m-auto h-full border-b border-dashed">
             <div id="header" class="flex items-center justify-between h-full border-b-[1] border-graytext">
                 <div id="logo">
                     <a href="" class="text-blackSite uppercase text-2xl font-bold ">SITETEME</a>
@@ -60,62 +60,68 @@
             </div>
         </div>
         <!-- Form Register -->
-        <div class="bg-gray-900 hidden flex-col items-center justify-between text-white w-2/4 p-6 z-20 text-center rounded mt-44 -translate-y-2/4 -translate-x-2/4 relative "
+        <div class="bg-gray-300 hidden flex-col items-center top-8 justify-between text-white  p-6 z-20 text-center rounded h-auto  w-1/2 m-auto relative "
             id="form-login">
             <div id="close-btn" class="w-[15px]">
-                <svg class="absolute left-8 w-6 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke-width="1.5" stroke="currentColor">
+                <svg class="absolute left-8 w-6 fill-black stroke-black " xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" stroke-width="1.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
             </div>
-            <h2 class="mb-6 text-3xl">ورود و ثبت نام</h2>
+            <h2 class="mb-6 text-3xl text-black font-black">ورود و ثبت نام</h2>
             <div class="my-2 w-3/4">
                 <label for="username"></label>
                 <input type="text" id="username" placeholder="نام کاربری یا ایمیل "
-                    class="w-full p-2  outline-none rounded text-black" required />
+                    class="w-full p-3 outline-none rounded text-black" required />
             </div>
             <div class="my-2 w-3/4">
                 <label for="password"></label>
                 <input type="text" id="password" placeholder="رمز عبور"
-                    class="w-full p-2 outline-none rounded text-black" required />
+                    class="w-full p-3 outline-none rounded text-black" required />
             </div>
-            <div class="my-2 w-3/4 ">
+            <div class="my-2 w-3/4 flex items-center justify-between gap-4">
                 <button type="submit"
-                    class="w-full p-2 outline-none rounded text-white bg-blue-700 hover:bg-blue-600 transition-all">
+                    class="w-1/2 p-3 outline-none rounded text-white bg-blue-700 hover:bg-blue-600 transition-all">
                     ثبت نام
+                </button>
+                <button type="submit"
+                    class="w-1/2 p-3 outline-none rounded text-black text-blue-700 hover:bg-blue-100 hover:text-blue-700 transition-all">
+                    ورود
                 </button>
             </div>
         </div>
     </header>
     <!-- Intro Section -->
-    <section id="intro" class="my-8">
-        <div class="container m-auto">
-            <div class="intro flex justify-start ">
-                <div class="intro-right w-[50%]">
-                    <div class="intro-right-text w-[75%]">
-                        <h1 class="text-primary font-extrabold text-4xl mb-4 leading-[44px]">
-                            <span class="text-gray-900">سایت تیمی</span>
-                            آژانس حرفــــــه ای دیجیتـــال مارکتینــــــــــــــگ
-                        </h1>
-                        <p class="text-2xl  mb-5 text-title font-light leading-[30px]">
+    <section id="intro" class="my-8 ">
+        <div class="container px-2 md:m-auto  ">
+            <div class="intro flex flex-col md:flex-row justify-center items-center md:justify-start">
+                <div class="intro-right ">
+                    <div class="intro-right-text w-full">
+                        <div class="text-primary font-extrabold text-4xl mb-4 leading-[44px] flex items-center gap-2">
+                            <img src="../assets/img/logo-brand.png" alt="logo-brand" class="w-[110px] max-w-full" />
+                            <span class="md:text-2xl text-base">
+                                آژانس حرفــــــه ای دیجیتـــال مارکتینــــــگ
+                            </span>
+                        </div>
+                        <p class="text-2xl mb-5 text-title font-light leading-[30px] text-right md:w-2/3">
                             آژانـس سایت تیـمی ارائه دهنده کامـل‌ترین خدمات دیجیتال
                             مارکتیـنگ، جهت راه‌اندازی، رشد واثربخـشی کسب و کار آنلاین
                             شماست.<br />
                             ما از رشد و ارتقای کـسب و کـار شما حرف نمی‌زنیم ؛ در عمل ثابت
                             می‌کنیم.
                         </p>
-                        <img src="../assets/img/arrow-left.png" alt="" class="inline" />
+                        <img src="../assets/img/arrow-left.png" alt="" class=" hidden md:block" />
                         <button
                             class="bg-primary text-white rounded-full py-[8px] px-[16px] font-light  inline mx-2 text-lg transition-all hover:bg-black">
                             مشاوره رایگان
                         </button>
                         <button
                             class="border-primary border text-primary rounded-full py-[8px] px-[16px] font-light inline  text-lg transition-all hover:bg-primary hover:text-white">
-                            دوره جامع
+                            دوره جامع طراحی سایت
                         </button>
                     </div>
                 </div>
-                <div class="intro-left w-[50%]">
+                <div class="intro-left ">
                     <img src="../assets/img/hero-left-banner.jpg" alt=""
                         class="w-full max-w-full rounded-2xl mix-blend-multiply" />
                 </div>
@@ -128,7 +134,7 @@
         <div class="container m-auto ">
             <div class="flex flex-col items-center justify-center">
                 <div class="my-7 relative">
-                    <h3 class=" font-extrabold text-3xl z-20 relative ">
+                    <h3 class="text-2xl font-extrabold md:text-3xl z-20 relative ">
                         ما چگونه به پیشرفت شما کمک می کنیم !
                     </h3>
                     <span class="bg-[#B6BDF9] w-full h-4 inline-block absolute top-5 z-0"></span>
@@ -214,6 +220,152 @@
         </div>
     </section>
 
+    <!-- Services Section -->
+    <section id="services-section" class="my-[140px] hidden lg:block">
+        <div class="flex justify-center px-4 gap-6 m-auto items-center w-full text-white bg-black py-6 ">
+            <div class="flex gap-x-8">
+                <h3>خدمات طراحی سایت</h3>
+                <img src="/assets/img/star.svg" alt="" />
+            </div>
+            <div class="flex gap-x-8">
+                <h3>خدمات طراحی سایت</h3>
+                <img src="/assets/img/star.svg" alt="" />
+            </div>
+            <div class="flex gap-x-8">
+                <h3>خدمات طراحی سایت</h3>
+                <img src="/assets/img/star.svg" alt="" />
+            </div>
+
+            <div class="flex gap-x-8">
+                <h3>خدمات طراحی سایت</h3>
+                <img src="/assets/img/star.svg" alt="" />
+            </div>
+            <div class="flex gap-x-8">
+                <h3>خدمات طراحی سایت</h3>
+                <img src="/assets/img/star.svg" alt="" />
+            </div>
+            <div class="flex gap-x-8">
+                <h3>خدمات طراحی سایت</h3>
+                <img src="/assets/img/star.svg" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Section -->
+    <section id="Course-section" class="my-8">
+        <div class=" container m-auto px-2 ">
+            <div class="flex flex-col items-center justify-center">
+                <div class="my-7 relative">
+                    <h3 class="text-2xl font-extrabold md:text-3xl z-20 relative ">
+                        دوره های اموزشی سایت تیمی
+                    </h3>
+                    <span class="bg-[#B6BDF9] w-full h-4 inline-block absolute top-5 z-0"></span>
+                </div>
+                <div class="grid grid-rows-1 sm:grid-cols-2  xl:grid-cols-4 w-full xl:w-fit ">
+                    <div
+                        class="flex flex-col justify-start gap-y-3 group hover:-translate-y-2 transition-all ease-in-out duration-300 hover:shadow-slate-300 hover:shadow-lg bg-white p-3 rounded-md">
+                        <img src="../assets/img/flex-box.png" alt="" class="" />
+                        <a href="" class="group-hover:text-primary transition-all ease-in-out duration-300 ">
+                            <h3>آموزش جامع فکس باکس (Flex Box)</h3>
+                        </a>
+                        <div class="flex justify-between w-full mb-3">
+                            <div class="flex flex-col items-center gap-y-2">
+                                <span class="text-gray-300">انتشار</span>
+                                <span>20 آبان 1401</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-y-2">
+                                <span class="text-gray-300">تعداد دانشجو</span>
+                                <span>120 نفر</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-y-2">
+                                <span class="text-gray-300">هزینه دوره</span>
+                                <span>980000</span>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class="bg-gray-100 w-full p-3 inline-block text-center rounded-md group-hover:bg-primary group-hover:text-white transition-all ease-in-out duration-300">+
+                            مشاهده اطلاعات بیشنر
+                        </a>
+                    </div>
+                    <div
+                        class="flex flex-col justify-start gap-y-3 group hover:-translate-y-2 transition-all ease-in-out duration-300 hover:shadow-slate-300 hover:shadow-lg bg-white p-3 rounded-md">
+                        <img src="../assets/img/flex-box.png" alt="" />
+                        <a href="" class="group-hover:text-primary transition-all ease-in-out duration-300 ">
+                            <h3>آموزش جامع فکس باکس (Flex Box)</h3>
+                        </a>
+                        <div class="flex justify-between w-full mb-3">
+                            <div class="flex flex-col items-center gap-y-2">
+                                <span class="text-gray-300">انتشار</span>
+                                <span>20 آبان 1401</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-y-2">
+                                <span class="text-gray-300">تعداد دانشجو</span>
+                                <span>120 نفر</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-y-2">
+                                <span class="text-gray-300">هزینه دوره</span>
+                                <span>980000</span>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class="bg-gray-100 w-full p-3 inline-block text-center rounded-md group-hover:bg-primary group-hover:text-white transition-all ease-in-out duration-300">+
+                            مشاهده اطلاعات بیشنر
+                        </a>
+                    </div>
+                    <div
+                        class="flex flex-col justify-start gap-y-3 group hover:-translate-y-2 transition-all ease-in-out duration-300 hover:shadow-slate-300 hover:shadow-lg bg-white p-3 rounded-md">
+                        <img src="../assets/img/flex-box.png" alt="" />
+                        <a href="" class="group-hover:text-primary transition-all ease-in-out duration-300 ">
+                            <h3>آموزش جامع فکس باکس (Flex Box)</h3>
+                        </a>
+                        <div class="flex justify-between w-full mb-3">
+                            <div class="flex flex-col items-center gap-y-2">
+                                <span class="text-gray-300">انتشار</span>
+                                <span>20 آبان 1401</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-y-2">
+                                <span class="text-gray-300">تعداد دانشجو</span>
+                                <span>120 نفر</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-y-2">
+                                <span class="text-gray-300">هزینه دوره</span>
+                                <span>980000</span>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class="bg-gray-100 w-full p-3 inline-block text-center rounded-md group-hover:bg-primary group-hover:text-white transition-all ease-in-out duration-300">+
+                            مشاهده اطلاعات بیشنر
+                        </a>
+                    </div>
+                    <div
+                        class="flex flex-col justify-start gap-y-3 group hover:-translate-y-2 transition-all ease-in-out duration-300 hover:shadow-slate-300 hover:shadow-lg bg-white p-3 rounded-md">
+                        <img src="../assets/img/flex-box.png" alt="" />
+                        <a href="" class="group-hover:text-primary transition-all ease-in-out duration-300 ">
+                            <h3>آموزش جامع فکس باکس (Flex Box)</h3>
+                        </a>
+                        <div class="flex justify-between w-full mb-3">
+                            <div class="flex flex-col items-center gap-y-2">
+                                <span class="text-gray-300">انتشار</span>
+                                <span>20 آبان 1401</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-y-2">
+                                <span class="text-gray-300">تعداد دانشجو</span>
+                                <span>120 نفر</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-y-2">
+                                <span class="text-gray-300">هزینه دوره</span>
+                                <span>980000</span>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class="bg-gray-100 w-full p-3 inline-block text-center rounded-md group-hover:bg-primary group-hover:text-white transition-all ease-in-out duration-300">+
+                            مشاهده اطلاعات بیشنر
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="/src/main.js"></script>
 </body>
 
