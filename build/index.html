@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Siteteme</title>
     <link rel="stylesheet" href="./css/tailwind.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 
 </head>
 
@@ -26,18 +26,29 @@
                             <a href="">صفحه اصلی</a>
                         </li>
                         <li
-                                class="mx-2 text-gray-400 font-light text-lg transition-all py-2 hover:transition-all before:transition-all before:duration-150 hover:text-primary relative before:absolute before:w-0 hover:before:w-6 before:bg-primary before:bottom-0 before:h-1 before:content[''] before:rounded-full">
-                            <a href="">دوره ها </a>
+                                class="group flex items-center gap-x-2  mx-2 relative text-gray-400 font-light text-lg transition-all py-2 hover:transition-all before:transition-all before:duration-150 hover:text-primary relative before:absolute before:w-0 hover:before:w-6 before:bg-primary before:bottom-0 before:h-1 before:content[''] before:rounded-full">
+                            <a href="">دوره ها</a>
+                            <ul class=" group-hover:visible  group-hover:opacity-100 group-hover:top-[50px] transition-all absolute w-[250px] bg-gray-100 font-medium text-black p-2 rounded top-[70px] invisible opacity-0 ">
+                                <li class="hover:text-primary transition-all py-2"><a href="#">دوره جامع طراحی سایت </a>
+                                </li>
+                                <li class="hover:text-primary transition-all py-2"><a href="#">دوره جامع فلکس باکس </a>
+                                </li>
+                                <li class="hover:text-primary transition-all py-2"><a href="#">دوره جامع سئو</a></li>
+                                <li class="hover:text-primary transition-all py-2"><a href="#">دوره جامع جت انجین</a>
+                                </li>
+                            </ul>
                         </li>
                         <li
                                 class="group flex items-center gap-x-2  mx-2 relative text-gray-400 font-light text-lg transition-all py-2 hover:transition-all before:transition-all before:duration-150 hover:text-primary relative before:absolute before:w-0 hover:before:w-6 before:bg-primary before:bottom-0 before:h-1 before:content[''] before:rounded-full">
                             <a href="">خدمات</a>
-                            <ul class=" group-hover:visible  group-hover:opacity-100 group-hover:top-[42px] transition-all absolute w-[250px] bg-gray-100 font-medium text-black p-2 rounded top-[70px] invisible opacity-0 ">
+                            <ul class=" group-hover:visible group-hover:opacity-100 group-hover:top-[50px]  transition-all absolute w-[250px] bg-gray-100 font-medium text-black p-2 rounded top-[70px] invisible opacity-0 ">
+                                <li class="hover:text-primary relative transition-all py-2"><a href="#">طراحی سایت با
+                                    وردپری</a>
+                                </li>
                                 <li class="hover:text-primary transition-all py-2"><a href="#">سئوی داخلی </a></li>
                                 <li class="hover:text-primary transition-all py-2"><a href="#">سئوی خارجی </a></li>
                                 <li class="hover:text-primary transition-all py-2"><a href="#">سئوی تکنیکال</a></li>
-                                <li class="hover:text-primary transition-all py-2"><a href="#">طراحی سایت با وردپری</a>
-                                </li>
+
                             </ul>
                         </li>
                         <li
@@ -62,13 +73,13 @@
                 </div>
                 <div class="mr-2  bg-blackSite rounded-full py-3 px-4 flex items-center justify-center font-light hover:bg-primary transition-all"
                      id="btn-regiter">
-                    <button class="text-graytext mb-[-2px] ">ورود / ثبت نام</button>
+                    <button class="text-graytext font-light mb-[-2px] ">ورود / ثبت نام</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Form Register -->
-    <div class="bg-gray-300 hidden flex-col items-center top-8 justify-between text-white  p-6 z-20 text-center rounded h-auto  w-1/2 m-auto relative "
+    <div class="bg-gray-100 invisible relative text-center flex-col items-center justify-between text-white top-24  p-6 z-20 rounded h-auto w-1/2 m-auto  "
          id="form-login">
         <div id="close-btn" class="w-[15px]">
             <svg class="absolute left-8 w-6 fill-black stroke-black " xmlns="http://www.w3.org/2000/svg"
@@ -77,26 +88,28 @@
             </svg>
         </div>
         <h2 class="mb-6 text-3xl text-black font-black">ورود و ثبت نام</h2>
-        <div class="my-2 w-3/4">
-            <label for="username"></label>
-            <input type="text" id="username" placeholder="نام کاربری یا ایمیل "
-                   class="w-full p-3 outline-none rounded text-black" required/>
-        </div>
-        <div class="my-2 w-3/4">
-            <label for="password"></label>
-            <input type="text" id="password" placeholder="رمز عبور"
-                   class="w-full p-3 outline-none rounded text-black" required/>
-        </div>
-        <div class="my-2 w-3/4 flex items-center justify-between gap-4">
-            <button type="submit"
-                    class="w-1/2 p-3 outline-none rounded text-white bg-blue-700 hover:bg-blue-600 transition-all">
-                ثبت نام
-            </button>
-            <button type="submit"
-                    class="w-1/2 p-3 outline-none rounded text-black text-blue-700 hover:bg-blue-100 hover:text-blue-700 transition-all">
-                ورود
-            </button>
-        </div>
+        <form action="#" method="">
+            <div class="my-2 w-3/4 m-auto ">
+                <label for="username"></label>
+                <input type="text" id="username" placeholder="نام کاربری یا ایمیل "
+                       class="w-full p-3 outline-none rounded text-black" required/>
+            </div>
+            <div class="my-2 w-3/4 m-auto mb-4">
+                <label for="password"></label>
+                <input type="text" id="password" placeholder="رمز عبور"
+                       class="w-full p-3 outline-none rounded text-black" required/>
+            </div>
+            <div class="my-2 w-3/4 m-auto flex items-center justify-between gap-4">
+                <button type="submit"
+                        class="w-1/2 p-3  outline-none rounded text-white bg-blue-700 hover:bg-blue-600 ">
+                    ثبت نام
+                </button>
+                <button type="submit"
+                        class="w-1/2 p-3 outline-none rounded text-black text-blue-700 hover:bg-blue-100 hover:text-blue-700 ">
+                    ورود
+                </button>
+            </div>
+        </form>
     </div>
 </header>
 <!-- Intro Section -->
@@ -230,7 +243,7 @@
 
 <!-- Services Section -->
 <section id="services-section" class="my-[140px] hidden lg:block">
-    <div class="flex justify-center px-4 gap-6 m-auto items-center w-full text-white bg-black py-6 ">
+    <div class="flex justify-center px-4 gap-6 m-auto items-center w-full text-white bg-black py-6   ">
         <div class="flex gap-x-8">
             <h3>خدمات طراحی سایت</h3>
             <img src="/assets/img/star.svg" alt=""/>
@@ -370,11 +383,15 @@
                         مشاهده اطلاعات بیشنر
                     </a>
                 </div>
+
             </div>
         </div>
     </div>
 </section>
+
+
 <script src="/src/main.js"></script>
+
 </body>
 
 </html>

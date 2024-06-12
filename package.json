@@ -8,6 +8,7 @@
     "dev": "npx tailwindcss -i ./src/input.css -o ./build/css/tailwind.css --watch"
   },
   "dependencies": {
+    "owl.carousel": "^2.3.4",
     "swiper": "^11.0.5",
     "tailwindcss-animated": "^1.1.0"
   }
