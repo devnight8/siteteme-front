@@ -10,3 +10,16 @@ closeBtn.addEventListener("click",()=>{
   formLogin.classList.toggle('invisible')
 
 })
+
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 10,
+  slidesPerView: 8,
+  loop:true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  autoplay:true,
+  delay:500
+});
