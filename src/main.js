@@ -21,5 +21,8 @@ var swiper = new Swiper(".mySwiper", {
   },
 
   autoplay:true,
-  delay:500
+  enabled:true,
+  minimumVelocity:0.02,
+  addSlidesAfter:3,
+  addSlidesBefore:3,
 });
