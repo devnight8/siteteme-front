@@ -11,7 +11,7 @@ closeBtn.addEventListener("click",()=>{
 
 })
 
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
   spaceBetween: 10,
   slidesPerView: 8,
   loop:true,
@@ -42,3 +42,35 @@ var swiper = new Swiper(".mySwiper", {
   addSlidesAfter:3,
   addSlidesBefore:3,
 });
+
+
+
+let swiperProduct = new Swiper(".Swiper-product", {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  loop:true,
+  autoplay:true,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    680: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 640px
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 10
+    },
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+

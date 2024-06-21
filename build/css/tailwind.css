@@ -1246,12 +1246,6 @@ details.collapse summary::-webkit-details-marker {
   outline-offset: 2px
 }
 
-.mockup-phone .display {
-  overflow: hidden;
-  border-radius: 40px;
-  margin-top: -25px
-}
-
 .mockup-browser .mockup-browser-toolbar .input {
   position: relative;
   margin-left: auto;
@@ -1551,12 +1545,12 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 3rem
 }
 
-.mt-\[150px\] {
-  margin-top: 150px
+.mt-3 {
+  margin-top: 0.75rem
 }
 
-.block {
-  display: block
+.mt-\[150px\] {
+  margin-top: 150px
 }
 
 .inline-block {
@@ -1587,16 +1581,12 @@ details.collapse summary::-webkit-details-marker {
   height: 1rem
 }
 
+.h-8 {
+  height: 2rem
+}
+
 .h-\[105px\] {
   height: 105px
-}
-
-.h-\[346px\] {
-  height: 346px
-}
-
-.h-\[450px\] {
-  height: 450px
 }
 
 .h-auto {
@@ -1611,12 +1601,8 @@ details.collapse summary::-webkit-details-marker {
   width: 50%
 }
 
-.w-1\/3 {
-  width: 33.333333%
-}
-
-.w-2\/3 {
-  width: 66.666667%
+.w-2\/4 {
+  width: 50%
 }
 
 .w-3\/4 {
@@ -1635,12 +1621,12 @@ details.collapse summary::-webkit-details-marker {
   width: 2rem
 }
 
-.w-\[110px\] {
-  width: 110px
+.w-\[1000px\] {
+  width: 1000px
 }
 
-.w-\[1240px\] {
-  width: 1240px
+.w-\[110px\] {
+  width: 110px
 }
 
 .w-\[15px\] {
@@ -1651,12 +1637,16 @@ details.collapse summary::-webkit-details-marker {
   width: 250px
 }
 
-.w-full {
-  width: 100%
+.w-\[30\%\] {
+  width: 30%
 }
 
 .w-auto {
   width: auto
+}
+
+.w-full {
+  width: 100%
 }
 
 .max-w-full {
@@ -1734,10 +1724,6 @@ details.collapse summary::-webkit-details-marker {
   row-gap: 0.75rem
 }
 
-.overflow-hidden {
-  overflow: hidden
-}
-
 .scroll-smooth {
   scroll-behavior: smooth
 }
@@ -1748,6 +1734,10 @@ details.collapse summary::-webkit-details-marker {
 
 .rounded-2xl {
   border-radius: 1rem
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem
 }
 
 .rounded-full {
@@ -1768,6 +1758,10 @@ details.collapse summary::-webkit-details-marker {
 
 .border-dashed {
   border-style: dashed
+}
+
+.border-none {
+  border-style: none
 }
 
 .border-black {
@@ -1847,6 +1841,10 @@ details.collapse summary::-webkit-details-marker {
   stroke: #000
 }
 
+.p-1 {
+  padding: 0.25rem
+}
+
 .p-2 {
   padding: 0.5rem
 }
@@ -1878,6 +1876,11 @@ details.collapse summary::-webkit-details-marker {
   padding-right: 16px
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem
@@ -1896,6 +1899,11 @@ details.collapse summary::-webkit-details-marker {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem
 }
 
 .py-\[8px\] {
@@ -2076,21 +2084,16 @@ body {
   height: 100%;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.swiper-button-next,.swiper-button-prev {
+  background: #b6bdf9;
+  color: #fff;
+  width: 46px;
+  border-radius: 7px;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: 'next';
+  font-size: 24px;
 }
 
 .before\:absolute::before {
@@ -2164,6 +2167,11 @@ body {
 .hover\:bg-blue-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity))
+}
+
+.hover\:bg-blue-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity))
 }
 
 .hover\:bg-primary:hover {
@@ -2253,12 +2261,6 @@ body {
   opacity: 1
 }
 
-@media (min-width: 640px) {
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr))
-  }
-}
-
 @media (min-width: 768px) {
   .md\:m-auto {
     margin: auto
@@ -2272,12 +2274,20 @@ body {
     display: flex
   }
 
-  .md\:w-2\/3 {
-    width: 66.666667%
+  .md\:h-\[346px\] {
+    height: 346px
   }
 
-  .md\:w-\[1280px\] {
-    width: 1280px
+  .md\:h-\[450px\] {
+    height: 450px
+  }
+
+  .md\:w-1\/3 {
+    width: 33.333333%
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%
   }
 
   .md\:w-\[1240px\] {
@@ -2330,10 +2340,6 @@ body {
   .xl\:w-fit {
     width: -moz-fit-content;
     width: fit-content
-  }
-
-  .xl\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr))
   }
 }
 
