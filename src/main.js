@@ -45,7 +45,7 @@ let swiper = new Swiper(".mySwiper", {
 
 
 
-let swiperProduct = new Swiper(".Swiper-product", {
+let swiperCourse = new Swiper(".swiper-course", {
   slidesPerView: 4,
   spaceBetween: 10,
   loop:true,
