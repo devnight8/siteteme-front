@@ -11,7 +11,7 @@ closeBtn.addEventListener("click",()=>{
 
 })
 
-let swiper = new Swiper(".mySwiper", {
+let swiperBrands = new Swiper(".brands", {
   spaceBetween: 10,
   slidesPerView: 8,
   loop:true,
@@ -22,12 +22,12 @@ let swiper = new Swiper(".mySwiper", {
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 20
     },
     // when window width is >= 480px
     480: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 20
     },
     // when window width is >= 640px
@@ -74,3 +74,22 @@ let swiperCourse = new Swiper(".swiper-course", {
   },
 });
 
+
+
+window.addEventListener("DOMContentLoaded",()=>{
+  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+
+// Whenever the user explicitly chooses light mode
+  localStorage.theme = 'light'
+
+// Whenever the user explicitly chooses dark mode
+  localStorage.theme = 'dark'
+
+// Whenever the user explicitly chooses to respect the OS preference
+//     localStorage.removeItem('theme')
+})

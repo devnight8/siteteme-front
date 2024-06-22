@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  // darkMode: 'selector',
   content: ["./build/**/*.{html,js}","./src/**/*.{js,css}"],
   theme: {
     extend: {
@@ -15,6 +16,15 @@ module.exports = {
         "footer-texture": "url('/img/footer-texture.png')",
       },
     },
+    animation: {
+      'infinite-scroll': 'infinite-scroll 25s linear infinite',
+    },
+    keyframes: {
+      'infinite-scroll': {
+        from: {transform: 'translateX(0)'},
+        to: {transform: 'translateX(-100%)'},
+      }
+    }
   },
   plugins: [
     require('tailwindcss-animated'),

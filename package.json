@@ -6,9 +6,12 @@
     "tailwindcss": "^3.4.4"
   },
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./build/css/tailwind.css --watch"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./build/css/tailwind.css --watch",
+    "build-js": "npx esbuild ./src/alphinjs.js --outfile=./build/js/script.js --bundle --watch"
   },
   "dependencies": {
+    "alpinejs": "^3.14.1",
+    "esbuild": "^0.21.5",
     "owl.carousel": "^2.3.4",
     "swiper": "^11.0.5",
     "tailwindcss-animated": "^1.1.0"
