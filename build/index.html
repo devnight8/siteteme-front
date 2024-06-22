@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Siteteme</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/tailwind.css"/>
 </head>
 
@@ -14,6 +14,12 @@
 <header class="h-[105px]">
     <div class="container w-auto px-2 md:w-[1240px] md:m-auto h-full border-b border-dashed">
         <div id="header" class="flex items-center justify-between h-full border-b-[1] border-graytext dark:border-gray-600">
+            <div class="menu-humberger md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            </div>
             <div id="logo">
                 <a href="" class="text-blackSite uppercase text-2xl font-bold dark:text-gray-200">SITETEME</a>
             </div>
@@ -62,15 +68,20 @@
                 </nav>
             </div>
             <div class="flex items-center">
-                <div class="flex">
+                <div class="flex space-x-2 space-x-reverse">
                     <a href=""
-                       class="mx-2 border-graytext p-[10px] border rounded-full hover:border-gray-900  transition-all"><img
+                       class=" border-graytext p-[10px] border rounded-full hover:border-gray-900  transition-all"><img
                             src="/assets/img/search.svg" alt=""/></a>
                     <a href=""
                        class=" border-graytext p-[10px] border rounded-full hover:border-gray-900 transition-all"><img
                             src="/assets/img/Bag.svg" alt=""/></a>
+                    <a href=""
+                       class=" md:hidden border-graytext p-[10px] border rounded-full hover:border-gray-900 transition-all"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                    </svg>
+                    </a>
                 </div>
-                <div class="mr-2 dark:bg-gray-200 dark:text-black bg-blackSite text-white rounded-full py-3 px-4 flex items-center justify-center font-light hover:bg-primary transition-all hover:dark:bg-gray-300  hover:dark:text-gray-800"
+                <div class="mr-2 hidden dark:bg-gray-200 dark:text-black bg-blackSite text-white rounded-full py-3 px-4 md:flex items-center justify-center font-light hover:bg-primary transition-all hover:dark:bg-gray-300  hover:dark:text-gray-800"
                      id="btn-regiter">
                     <button class="font-light mb-[-2px] ">ورود / ثبت نام</button>
                 </div>
@@ -651,7 +662,7 @@
 
 <!--Email marketing-->
 <section id="email-marketing" class="w-full my-[140px] px-2">
-    <div class="container w-full m-auto md:w-[1000px]  ">
+    <div class="container w-full m-auto md:w-[1000px]">
         <div class="bg-[#B6BDF9] py-16 rounded-3xl flex flex-col gap-y-3 justify-center items-center px-2">
             <div class="flex items-center">
                 <img src="/assets/img/arrow-white.png" alt="">
@@ -804,7 +815,7 @@
 
 
 <!--scripts-->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/node_modules/swiper/swiper-bundle.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <script src="/src/main.js"></script>
 

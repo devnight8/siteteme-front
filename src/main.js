@@ -1,3 +1,5 @@
+
+
 const formLogin = document.querySelector("#form-login");
 const btnLogin = document.querySelector("#btn-regiter");
 const closeBtn = document.querySelector("#close-btn");
@@ -93,3 +95,4 @@ window.addEventListener("DOMContentLoaded",()=>{
 // Whenever the user explicitly chooses to respect the OS preference
 //     localStorage.removeItem('theme')
 })
+
