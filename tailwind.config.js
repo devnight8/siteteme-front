@@ -4,6 +4,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily:{
+        rokh: ["rokh"]
+      },
       colors: {
         primary: "#5A6AF2",
         backgroundColor: "#FBFBFB",
@@ -15,6 +18,7 @@ module.exports = {
         "intro-img": "url('assets/img/hexa-spiral.png')",
         "footer-texture": "url('/img/footer-texture.png')",
       },
+
     },
     animation: {
       'infinite-scroll': 'infinite-scroll 25s linear infinite',

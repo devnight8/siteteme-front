@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl" class="scroll-smooth" class="dark">
+<html lang="fa" dir="rtl" class="scroll-smooth dark" >
 
 <head>
     <meta charset="UTF-8"/>
@@ -14,7 +14,7 @@
 <header class="h-[105px]">
     <div class="container w-auto px-2 md:w-[1240px] md:m-auto h-full border-b border-dashed">
         <div id="header" class="flex items-center justify-between h-full border-b-[1] border-graytext dark:border-gray-600">
-            <div class="menu-humberger md:hidden">
+            <div class="menu-hamburger md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
@@ -22,6 +22,7 @@
             </div>
             <div id="logo">
                 <a href="" class="text-blackSite uppercase text-2xl font-bold dark:text-gray-200">SITETEME</a>
+                <span class="w-2 h-2 rounded-full bg-primary"></span>
             </div>
             <div id="navbar" class="hidden md:flex">
                 <nav>
@@ -31,7 +32,7 @@
                             <a href="">صفحه اصلی</a>
                         </li>
                         <li
-                                class="mx-2 text-gray-400 dark:text-white font-light text-lg transition-all py-2 hover:transition-all before:transition-all before:duration-150 hover:dark:text-gray-200  hover:text-primary relative before:absolute before:w-0 hover:before:w-6 hover:dark:before:bg-gray-200 before:bg-primary before:bottom-0 before:h-1 before:content[''] before:rounded-full">
+                                class="mx-2 text-gray-400 dark:text-white font-light text-lg transition-all py-2 hover:transition-all before:transition-all before:duration-150 hover:dark:text-gray-200  hover:text-primary relative before:absolute before:w-0 hover:before:w-6 hover:dark:before:bg-gray-200 before:bg-primary before:bottom-0 before:h-1 before:content[''] before:rounded-full group">
                             <a href="">دوره ها</a>
                             <ul class=" group-hover:visible   group-hover:opacity-100  group-hover:top-[50px] transition-all absolute w-[250px] bg-gray-100 font-medium text-black p-2 rounded top-[70px] invisible opacity-0 ">
                                 <li class="hover:text-primary transition-all py-2"><a href="#">دوره جامع طراحی سایت </a>
@@ -44,9 +45,9 @@
                             </ul>
                         </li>
                         <li
-                                class="mx-2 text-gray-400 dark:text-white font-light text-lg transition-all py-2 hover:transition-all before:transition-all before:duration-150 hover:dark:text-gray-200  hover:text-primary relative before:absolute before:w-0 hover:before:w-6 hover:dark:before:bg-gray-200 before:bg-primary before:bottom-0 before:h-1 before:content[''] before:rounded-full">
+                                class="mx-2 text-gray-400 dark:text-white font-light text-lg transition-all py-2 hover:transition-all before:transition-all before:duration-150 hover:dark:text-gray-200  hover:text-primary relative before:absolute before:w-0 hover:before:w-6 hover:dark:before:bg-gray-200 before:bg-primary before:bottom-0 before:h-1 before:content[''] before:rounded-full group">
                             <a href="">خدمات</a>
-                            <ul class=" group-hover:visible  group-hover:opacity-100  group-hover:top-[50px]  transition-all absolute w-[250px] bg-gray-100 font-medium text-black p-2 rounded top-[70px] invisible opacity-0 ">
+                            <ul class="group-hover:visible  group-hover:opacity-100  group-hover:top-[50px]  transition-all absolute w-[250px] bg-gray-100 font-medium text-black p-2 rounded top-[70px] invisible opacity-0 ">
                                 <li class="hover:text-primary relative transition-all py-2"><a href="#">طراحی سایت با
                                     وردپری</a>
                                 </li>
@@ -272,9 +273,9 @@
                    </h3>
                    <span class="bg-[#B6BDF9] w-full h-4 inline-block absolute top-5 z-0"></span>
                </div>
-                <div class="col-start-4 bg-gray-100 p-2.5 px-4 rounded-full hover:bg-gray-200 transition-all md:flex justify-between items-center hidden gap-x-2 group">
-                    <a href="">مشاهده همه</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[20px] group-hover:animate-bounce">
+                <div class="col-start-4 bg-gray-100 animate-bounce p-2.5 px-4 rounded-full hover:bg-gray-200 transition-all md:flex justify-between items-center hidden gap-x-2 group ">
+                    <a href="" class="">مشاهده همه</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[20px] animate-bounce">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
                     </svg>
 
@@ -532,16 +533,19 @@
         <div class="flex flex-col items-center justify-center">
             <div class="my-7 relative w-full grid-cols-none grid md:grid-cols-3 justify-center items-center justify-items-center">
                 <div class="self-center relative col-start-2">
-                    <h3 class="text-2xl font-extrabold md:text-3xl z-20 relative text-center">
+                    <h3 class="text-2xl font-extrabold md:text-[1.7rem] z-20 relative text-center w-fit">
                       پروژه های انجام شده سایت تیمی
                     </h3>
                     <span class="bg-[#B6BDF9] w-full h-4 inline-block absolute top-5 z-0"></span>
                 </div>
-                <div class="col-start-4 bg-gray-100 p-2 px-4 rounded-full hover:bg-gray-200 transition-all hidden md:block ">
-                    <a href="">مشاهده همه</a>
+                <div class="col-start-4 bg-gray-100 animate-bounce p-2.5 px-4 rounded-full hover:bg-gray-200 transition-all md:flex justify-between items-center hidden gap-x-2 group ">
+                    <a href="" class="">مشاهده همه</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[20px] animate-bounce">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                    </svg>
+
                 </div>
             </div>
-
             <div class="grid grid-cols-1 gap-2 md:grid-cols-3  w-auto md:w-full">
                 <div
                         class="flex flex-col justify-start gap-y-3 group hover:-translate-y-2 transition-all ease-in-out duration-300 hover:shadow-slate-300 hover:shadow-lg bg-white p-3 rounded-md">
@@ -670,7 +674,8 @@
             </div>
             <p class="text-black">میتونید انتقادات و پیشنهادهای خودتون رو واسمون بفرستید</p>
             <form action="" class="bg-white w-full md:w-2/4 flex items-center p-1 rounded-full mt-3 ">
-                <input type="text" name="" id="" class="border-none w-full outline-none h-full px-4"
+                <label for="email"></label>
+                <input type="text" name="email" id="email" required class="border-none w-full outline-none h-full px-4"
                        placeholder="ایمیل تو اینجا بنویس برامون ...">
                 <button class="bg-primary rounded-full text-sm md:text-base w-[30%] py-2 px-4 text-white hover:bg-blue-800 transition-all">
                     ارسال ایمیل
@@ -816,7 +821,7 @@
 
 <!--scripts-->
 <script src="/node_modules/swiper/swiper-bundle.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script src="/node_modules/alpinejs/dist/cdn.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>
