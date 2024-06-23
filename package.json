@@ -6,7 +6,7 @@
     "tailwindcss": "^3.4.4"
   },
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./build/css/tailwind.css --watch",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./build/tailwind.css --watch",
     "build-js": "npx esbuild ./src/alphinjs.js --outfile=./build/js/script.js --bundle --watch"
   },
   "dependencies": {
