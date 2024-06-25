@@ -32,8 +32,8 @@
     font-family: rokh;
     font-style: normal;
     font-weight: 600;
-    src: url("/src/fonts/rokh/woff/RokhFaNum-Bold.woff") format("woff"),
-    url("/src/fonts/rokh/woff2/RokhFaNum-Bold.woff2") format("woff2")
+    src: url("/src/fonts/rokh/woff/RokhFaNum-Black.woff") format("woff"),
+    url("/src/fonts/rokh/woff2/RokhFaNum-Black.woff2") format("woff2")
 }
 
 
@@ -41,8 +41,8 @@
     font-family: rokh;
     font-style: normal;
     font-weight: 700;
-    src: url("/src/fonts/rokh/woff/RokhFaNum-Black.woff") format("woff"),
-    url("/src/fonts/rokh/woff2/RokhFaNum-Black.woff2") format("woff2")
+    src: url("/src/fonts/rokh/woff/RokhFaNum-Bold.woff") format("woff"),
+    url("/src/fonts/rokh/woff2/RokhFaNum-Bold.woff2") format("woff2")
 }
 
 

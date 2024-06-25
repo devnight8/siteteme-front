@@ -77,6 +77,37 @@ let swiperCourse = new Swiper(".swiper-course", {
 });
 
 
+let swiperBlogs = new Swiper(".swiper-blogs", {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  loop:true,
+  autoplay:true,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    680: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 640px
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 10
+    },
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
+
 
 window.addEventListener("DOMContentLoaded",()=>{
   // On page load or when changing themes, best to add inline in `head` to avoid FOUC
